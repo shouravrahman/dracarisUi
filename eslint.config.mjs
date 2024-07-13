@@ -24,7 +24,7 @@ export default [
       "no-multiple-empty-lines": ["error", { max: 1 }], // Allow one empty line
       "no-unneeded-ternary": "warn",
 
-      "react/react-in-jsx-scope": "off",
+
     },
   },
 

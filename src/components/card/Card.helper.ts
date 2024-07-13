@@ -9,7 +9,7 @@ export const cardStyles = cva(
     variants: {
       variant: {
         default: "bg-white",
-        primary: "bg-blue-50",
+        primary: "bg-blue-100",
         secondary: "bg-gray-50",
         danger: "bg-red-50",
       },

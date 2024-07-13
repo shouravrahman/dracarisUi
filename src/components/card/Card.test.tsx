@@ -1,7 +1,6 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import Card from "./Card";
-import { CardProps } from "./Card";
+import Card, { CardProps } from "./Card";
 
 describe("Card component", () => {
   it("renders the card with the provided title", () => {

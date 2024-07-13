@@ -1,7 +1,7 @@
 import React, { type ComponentPropsWithRef } from "react";
 import { type VariantProps } from "class-variance-authority";
-import { cn } from "../../utils/cn.js";
-import { buttonStyles } from "./Button.helper.js";
+import { buttonStyles } from "./Button.helper.ts";
+import { cn } from "../../utils/cn.ts";
 
 type ButtonElementProps = ComponentPropsWithRef<"button">;
 
