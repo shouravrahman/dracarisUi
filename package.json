@@ -9,9 +9,7 @@
     "/dist"
   ],
   "scripts": {
-    "build": "tailwindcss build -o /dist && rollup -c",
-  "build:tailwind": "tailwindcss build -o /dist",
-  "dev:tailwind": "npx tailwindcss watch",  
+    "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "jest --watchAll --verbose",
     "storybook": "storybook dev -p 6006",

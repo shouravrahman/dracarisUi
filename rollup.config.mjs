@@ -5,6 +5,9 @@ import packageJson from "./package.json" assert { type: "json" };
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
+import image from '@rollup/plugin-image';
+import terser from '@rollup/plugin-terser';
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 export default defineConfig({
   input: "src/index.ts", // Your library's entry point
@@ -24,6 +27,9 @@ export default defineConfig({
   plugins: [
     nodeResolve(), // Resolve dependencies from 'node_modules'
     commonjs(), // Transform CommonJS modules for Rollup
+    peerDepsExternal(),
+    terser(),
+    image(),
     typescript({
       tsconfig: "./tsconfig.json",
       exclude: [
@@ -41,11 +47,7 @@ export default defineConfig({
       config: {
         path: "./postcss.config.js",
       },
-      plugins: [
-        // ... existing plugins
-        import("tailwindcss"),
-        import("autoprefixer"),
-      ],
+      
       sourceMap: true, // Generate source maps
     }),
 
