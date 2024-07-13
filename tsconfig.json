@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Ensure broad browser compatibility (adjust if needed)
+    "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries
+    "allowJs": false, // Allow importing JavaScript files
+    "skipLibCheck": true, // Skip type checking of external libraries (if applicable)
+    "esModuleInterop": true, // Enable ES moduleinterop for smooth imports
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "strict": true, // Enable strict type checking for better type safety
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file naming convention
+    "noFallthroughCasesInSwitch": true, // Disallow fallthrough in switch statements
+    "module": "esnext", // Use ESNext module system for modern features
+    "moduleResolution": "node", // Resolve modules using Node.js resolution strategy
+    "isolatedModules": true, // Treat each file as a separate module
+    "jsx": "react-jsx", // Configure JSX support for React
+    "declaration": true, // Generate type declaration files (.d.ts)
+    "outDir": "dist", // Output compiled JavaScript and declaration files to a dedicated directory
+
+    // Additional options you might consider:
+    "sourceMap": true, // Enable source maps for debugging (optional)
+    // "declarationMap": true,        // Generate source maps for type declarations (optional)
+    // "target": "es2015",           // If your target browsers support ES2015+ features
+
+    "emitDeclarationOnly": true, //only output d.ts files not js files
+    "noUnusedLocals": true, //no unused variables
+    "declarationDir": "types", // Output type declarations to a dedicated directory
+    "noUncheckedIndexedAccess": true,
+    "allowUnreachableCode": false,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true
+  }
+}
